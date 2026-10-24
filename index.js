@@ -17,6 +17,19 @@ let startX;
 let currX;
 let diffX = 0;
 
+//service-worker
+
+if ("serviceWorker" in navigator) {
+  navigator.serviceWorker
+    .register("./service-worker.js")
+    .then((registration) => {
+      console.log("Service Worker registriert:", registration.scope);
+    })
+    .catch((error) => {
+      console.error("Service Worker Fehler:", error);
+    });
+}
+
 function calcPace(meters, h, m, s) {
   const distanceInKm = (meters / 1000).toFixed(2);
 

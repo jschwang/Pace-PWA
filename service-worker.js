@@ -6,6 +6,8 @@ const FILES_TO_CACHE = [
   "./style.css",
   "./index.js",
   "./manifest.json",
+  "./Pace-PWA-small.png",
+  "./Pace-PWA-Big.png",
 ];
 
 self.addEventListener("install", (e) => {
