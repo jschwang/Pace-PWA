@@ -1,0 +1,23 @@
+{
+  "name": "Pace-PWA",
+  "short_name": "PP",
+  "description": "Pace-Generator",
+  "theme_color": "#0b1220",
+  "background_color": "#334155",
+  "display": "standalone",
+  "orientation": "portrait",
+  "scope": "/",
+  "start_url": "./",
+  "icons": [
+    {
+      "src": "Pace-PWA-small.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    },
+    {
+      "src": "Pace-PWA-Big.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
