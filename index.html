@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>PWA</title>
+  </head>
+  <body>
+    <div class="container">
+      <main class="main-content">
+        <section class="section section-form">
+          <div class="container-center container-center-form">
+            <form action="" class="form-pace">
+              <div class="date-container">
+                <label for="date">Datum:</label>
+                <!-- TODO required -->
+                <input type="date" id="date" required />
+              </div>
+
+              <div class="distance-container">
+                <label for="meters">Streckenlänge in Meter:</label>
+                <input type="number" step="10" min="100" id="meters" required />
+              </div>
+
+              <div class="input-distance">
+                <div>
+                  <label for="hour">Stunde(n)</label>
+                  <input type="number" id="hour" max="60" />
+                </div>
+                <div>
+                  <label for="minute">Minute(n)</label>
+                  <input type="number" id="minute" max="59" required />
+                </div>
+                <div>
+                  <label for="seconds">Sekunde(n)</label>
+                  <input type="number" id="second" max="59" required />
+                </div>
+              </div>
+
+              <button class="btn-submit">Erstellen</button>
+            </form>
+          </div>
+        </section>
+        <section class="section section-display">
+          <div class="container-center-display">
+            <!-- Runs here -->
+          </div>
+        </section>
+      </main>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
